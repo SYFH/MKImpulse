@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB6492A1D3DE54A00ABC94C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB649291D3DE54A00ABC94C /* main.m */; };
+		0BB6492D1D3DE54A00ABC94C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6492C1D3DE54A00ABC94C /* AppDelegate.m */; };
+		0BB649301D3DE54A00ABC94C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6492F1D3DE54A00ABC94C /* ViewController.m */; };
+		0BB649331D3DE54A00ABC94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB649311D3DE54A00ABC94C /* Main.storyboard */; };
+		0BB649351D3DE54A00ABC94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB649341D3DE54A00ABC94C /* Assets.xcassets */; };
+		0BB649381D3DE54A00ABC94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB649361D3DE54A00ABC94C /* LaunchScreen.storyboard */; };
+		0BB6494B1D3DEC6D00ABC94C /* MKImpulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB649481D3DEC6D00ABC94C /* MKImpulse.m */; };
+		0BB6494C1D3DEC6D00ABC94C /* MKImpulseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6494A1D3DEC6D00ABC94C /* MKImpulseManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BB649251D3DE54A00ABC94C /* MKImpulseManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKImpulseManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB649291D3DE54A00ABC94C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BB6492B1D3DE54A00ABC94C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BB6492C1D3DE54A00ABC94C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0BB6492E1D3DE54A00ABC94C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0BB6492F1D3DE54A00ABC94C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0BB649321D3DE54A00ABC94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BB649341D3DE54A00ABC94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BB649371D3DE54A00ABC94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0BB649391D3DE54A00ABC94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB649471D3DEC6D00ABC94C /* MKImpulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImpulse.h; sourceTree = "<group>"; };
+		0BB649481D3DEC6D00ABC94C /* MKImpulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImpulse.m; sourceTree = "<group>"; };
+		0BB649491D3DEC6D00ABC94C /* MKImpulseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImpulseManager.h; sourceTree = "<group>"; };
+		0BB6494A1D3DEC6D00ABC94C /* MKImpulseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImpulseManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BB649221D3DE54A00ABC94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BB6491C1D3DE54A00ABC94C = {
+			isa = PBXGroup;
+			children = (
+				0BB649271D3DE54A00ABC94C /* MKImpulseManagerDemo */,
+				0BB649261D3DE54A00ABC94C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BB649261D3DE54A00ABC94C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BB649251D3DE54A00ABC94C /* MKImpulseManagerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BB649271D3DE54A00ABC94C /* MKImpulseManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0BB649461D3DEC6D00ABC94C /* MKImpulse */,
+				0BB6492B1D3DE54A00ABC94C /* AppDelegate.h */,
+				0BB6492C1D3DE54A00ABC94C /* AppDelegate.m */,
+				0BB6492E1D3DE54A00ABC94C /* ViewController.h */,
+				0BB6492F1D3DE54A00ABC94C /* ViewController.m */,
+				0BB649311D3DE54A00ABC94C /* Main.storyboard */,
+				0BB649341D3DE54A00ABC94C /* Assets.xcassets */,
+				0BB649361D3DE54A00ABC94C /* LaunchScreen.storyboard */,
+				0BB649391D3DE54A00ABC94C /* Info.plist */,
+				0BB649281D3DE54A00ABC94C /* Supporting Files */,
+			);
+			path = MKImpulseManagerDemo;
+			sourceTree = "<group>";
+		};
+		0BB649281D3DE54A00ABC94C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BB649291D3DE54A00ABC94C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BB649461D3DEC6D00ABC94C /* MKImpulse */ = {
+			isa = PBXGroup;
+			children = (
+				0BB649471D3DEC6D00ABC94C /* MKImpulse.h */,
+				0BB649481D3DEC6D00ABC94C /* MKImpulse.m */,
+				0BB649491D3DEC6D00ABC94C /* MKImpulseManager.h */,
+				0BB6494A1D3DEC6D00ABC94C /* MKImpulseManager.m */,
+			);
+			name = MKImpulse;
+			path = ../../MKImpulse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BB649241D3DE54A00ABC94C /* MKImpulseManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB6493C1D3DE54A00ABC94C /* Build configuration list for PBXNativeTarget "MKImpulseManagerDemo" */;
+			buildPhases = (
+				0BB649211D3DE54A00ABC94C /* Sources */,
+				0BB649221D3DE54A00ABC94C /* Frameworks */,
+				0BB649231D3DE54A00ABC94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKImpulseManagerDemo;
+			productName = MKImpulseManagerDemo;
+			productReference = 0BB649251D3DE54A00ABC94C /* MKImpulseManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BB6491D1D3DE54A00ABC94C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SYFH;
+				TargetAttributes = {
+					0BB649241D3DE54A00ABC94C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0BB649201D3DE54A00ABC94C /* Build configuration list for PBXProject "MKImpulseManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BB6491C1D3DE54A00ABC94C;
+			productRefGroup = 0BB649261D3DE54A00ABC94C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BB649241D3DE54A00ABC94C /* MKImpulseManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BB649231D3DE54A00ABC94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB649381D3DE54A00ABC94C /* LaunchScreen.storyboard in Resources */,
+				0BB649351D3DE54A00ABC94C /* Assets.xcassets in Resources */,
+				0BB649331D3DE54A00ABC94C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB649211D3DE54A00ABC94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB649301D3DE54A00ABC94C /* ViewController.m in Sources */,
+				0BB6494B1D3DEC6D00ABC94C /* MKImpulse.m in Sources */,
+				0BB6492D1D3DE54A00ABC94C /* AppDelegate.m in Sources */,
+				0BB6494C1D3DEC6D00ABC94C /* MKImpulseManager.m in Sources */,
+				0BB6492A1D3DE54A00ABC94C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0BB649311D3DE54A00ABC94C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BB649321D3DE54A00ABC94C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0BB649361D3DE54A00ABC94C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BB649371D3DE54A00ABC94C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BB6493A1D3DE54A00ABC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BB6493B1D3DE54A00ABC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BB6493D1D3DE54A00ABC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MKImpulseManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MKImpulseManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0BB6493E1D3DE54A00ABC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MKImpulseManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MKImpulseManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BB649201D3DE54A00ABC94C /* Build configuration list for PBXProject "MKImpulseManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB6493A1D3DE54A00ABC94C /* Debug */,
+				0BB6493B1D3DE54A00ABC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB6493C1D3DE54A00ABC94C /* Build configuration list for PBXNativeTarget "MKImpulseManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB6493D1D3DE54A00ABC94C /* Debug */,
+				0BB6493E1D3DE54A00ABC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BB6491D1D3DE54A00ABC94C /* Project object */;
+}
