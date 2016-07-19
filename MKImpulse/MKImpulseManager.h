@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+#define IMPULSE_MAIN_QUEUE   dispatch_get_main_queue()
+#define IMPULSE_GLOBAL_QUEUE dispatch_get_global_queue(0, 0)
+
 #define IMPULSE_UNLIMITED     (-1)
 #define IMPULSE_SINGLE        @(1)
 
@@ -30,9 +33,9 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 @interface MKImpulseManager : NSObject
 
 /*!
- @brief 初始化一个脉冲器单例, 用来管理所有的脉冲器
+ @brief 初始化一个脉冲器管理者单例, 用来管理所有的脉冲器
  
- @return 脉冲器
+ @return 脉冲器管理者
  */
 + (instancetype)defaultManager;
 
@@ -70,14 +73,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行回调式脉冲, 可控制执行次数, 每次间隔时间
+    进行回调式脉冲, 可控制执行次数, 脉冲间隔时间
     默认立即开始, 精度为0s
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
- @param interval 每次间隔的时间, 单位s
+ @param interval 脉冲间隔的时间, 单位s
  @param action   需要执行的回调
  */
 - (void)impulseWithRepeat:(NSUInteger)repeat
@@ -86,7 +89,7 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 每次间隔的时间
+    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 脉冲间隔的时间
     默认精度为0s
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
@@ -94,7 +97,7 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行的时间, 单位s
- @param interval 每次间隔的时间, 单位s
+ @param interval 脉冲间隔的时间, 单位s
  @param action   需要执行的回调
  */
 - (void)impulseWithRepeat:(NSUInteger)repeat
@@ -104,14 +107,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 每次间隔的时间, 执行精度
+    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 脉冲间隔的时间, 执行精度
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行的时间, 单位s
- @param interval 每次间隔的时间, 单位s
+ @param interval 脉冲间隔的时间, 单位s
  @param accuracy 执行精度, 单位s
  @param action   需要执行的回调
  */
@@ -123,14 +126,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief 
-    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 每次间隔的时间, 执行精度, 执行线程
+    进行回调式脉冲, 可控制执行次数, 开始执行的时间, 脉冲间隔的时间, 执行精度, 执行线程
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param queue    任务所执行的线程
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行的时间, 单位s
- @param interval 每次间隔的时间, 单位s
+ @param interval 脉冲间隔的时间, 单位s
  @param accuracy 执行精度, 单位s
  @param action   需要执行的回调
  */
@@ -200,14 +203,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行方法式脉冲, 可控制执行次数, 每次间隔时间
+    进行方法式脉冲, 可控制执行次数, 脉冲间隔时间
     默认立即执行, 精度为0s
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
- @param interval 每次间隔时间, 单位s
+ @param interval 脉冲间隔时间, 单位s
  @param target   执行者
  @param selector 所执行的方法
  */
@@ -218,7 +221,7 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行方法式脉冲, 可控制执行次数, 开始时间, 每次间隔时间
+    进行方法式脉冲, 可控制执行次数, 开始时间, 脉冲间隔时间
     默认精度为0s
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
@@ -226,7 +229,7 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行时间, 单位s
- @param interval 每次间隔时间, 单位s
+ @param interval 脉冲间隔时间, 单位s
  @param target   执行者
  @param selector 所执行的方法
  */
@@ -238,14 +241,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行方法式脉冲, 可控制执行次数, 开始时间, 每次间隔时间, 执行精度
+    进行方法式脉冲, 可控制执行次数, 开始时间, 脉冲间隔时间, 执行精度
     所执行的代码默认在异步子线程中执行, 如需UI操作, 请自行切换线程
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行时间, 单位s
- @param interval 每次间隔时间, 单位s
+ @param interval 脉冲间隔时间, 单位s
  @param accuracy 执行精度, 单位s
  @param target   执行者
  @param selector 所执行的方法
@@ -259,14 +262,14 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 
 /*!
  @brief
-    进行方法式脉冲, 可控制执行线程, 执行次数, 开始时间, 每次间隔时间, 执行精度
+    进行方法式脉冲, 可控制执行线程, 执行次数, 开始时间, 脉冲间隔时间, 执行精度
  
     执行次数归零时, 该脉冲器将自行释放
  
  @param queue    执行线程
  @param repeat   执行次数, 如需无限执行, 请使用 IMPULSE_UNLIMITED
  @param start    开始执行时间, 单位s
- @param interval 每次间隔时间, 单位s
+ @param interval 脉冲间隔时间, 单位s
  @param accuracy 执行精度, 单位s
  @param target   执行者
  @param selector 所执行的方法

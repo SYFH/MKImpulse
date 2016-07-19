@@ -38,11 +38,13 @@
     sleep(5);
     
     [[MKImpulseManager defaultManager] scheduleImpulseExecType:MKImpulseExecTypeAppend];
-    [[MKImpulseManager defaultManager] impulseWithRepeat:10 target:self selector:@selector(testMethod)];
-    
-    sleep(5);
-    
-    [[MKImpulseManager defaultManager] cancelImpulseAll];
+    [[MKImpulseManager defaultManager] impulseWithQueue:IMPULSE_GLOBAL_QUEUE
+                                                 repeat:IMPULSE_UNLIMITED
+                                                  start:1
+                                               interval:2
+                                               accuracy:0
+                                                 target:self
+                                               selector:@selector(testMethod)];
 }
 
 - (void)testMethod {

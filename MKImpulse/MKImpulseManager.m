@@ -8,9 +8,6 @@
 #import "MKImpulseManager.h"
 #import "MKImpulse.h"
 
-#define IMPULSE_MAIN_QUEUE   dispatch_get_main_queue()
-#define IMPULSE_GLOBAL_QUEUE dispatch_get_global_queue(0, 0)
-
 #define IMPULSE_EXEC_NOW      @(0)
 #define IMPULSE_EXEC_INTERVAL @(1)
 #define IMPULSE_EXEC_ACCURACY @(0)
