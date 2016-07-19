@@ -156,7 +156,7 @@
 
 - (void)cancelImpulse {
     if (self.impulse) {
-        dispatch_cancel(self.impulse);
+        dispatch_source_cancel(self.impulse);
         self.impulse  = nil;
         self.target   = nil;
         self.selector = nil;
@@ -165,7 +165,7 @@
 
 - (void)cancelImpulseAll {
     [self.impulseGroup enumerateObjectsUsingBlock:^(MKImpulse *impulse, NSUInteger idx, BOOL * _Nonnull stop) {
-        dispatch_cancel(impulse.impulse_t);
+        dispatch_source_cancel(impulse.impulse_t);
     }];
     [self.impulseGroup removeAllObjects];
 }
@@ -178,7 +178,7 @@
             index = idx;
         }
     }];
-    dispatch_cancel(impulse_t);
+    dispatch_source_cancel(impulse_t);
     [self.impulseGroup removeObjectAtIndex:index];
 }
 

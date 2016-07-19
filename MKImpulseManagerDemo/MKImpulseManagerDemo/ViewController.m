@@ -28,9 +28,6 @@
     
     [[MKImpulseManager defaultManager] cancelImpulse];
     
-    // 当为 MKImpulseExecTypeAbolish 模式时, 进行线程延迟, 可以看做是依次执行脉冲器, 即使之前为无限执行的脉冲器
-//    sleep(3);
-    
     [[MKImpulseManager defaultManager] impulseWithRepeat:3 action:^{
         NSLog(@"action_2:%@", [NSThread currentThread]);
     }];
@@ -45,6 +42,10 @@
                                                accuracy:0
                                                  target:self
                                                selector:@selector(testMethod)];
+    
+    sleep(10);
+    
+    [[MKImpulseManager defaultManager] cancelImpulseAll];
 }
 
 - (void)testMethod {
