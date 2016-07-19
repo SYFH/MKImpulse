@@ -1,18 +1,18 @@
-### MKImpulse
----------
+## MKImpulse
+----------
 MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
 系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大. 而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
 
-#### 优点
+### 优点
  - 高精度
  - 高度可控性
  - 自防止内存泄漏
  - 进行多任务操作
 
-#### 缺点
+### 缺点
 因为是CPU时钟直接计算, 不宜将间隔设置的过小, 可能会造成CPU资源的大量占用而将进程卡死
 
-#### 安装
+### 安装
 使用CocoaPods安装(1.0.0及之后的版本)
 ```
 source 'https://github.com/CocoaPods/Specs.git'
@@ -25,16 +25,16 @@ end
 pod 'MKImpulse'
 ```
 
-#### 手动安装
+### 手动安装
 从终端下载仓库
 ```
 $git clone https://github.com/SYFH/MKImpulse.git
 ```
 将仓库中MKImpulse文件夹直接复制到你的项目中
 
-### 使用
----------
-#### 简单使用
+## 使用
+----------
+### 简单使用
 回调式
 ```
 #import "MKImpulseManager.h"
@@ -49,7 +49,7 @@ $git clone https://github.com/SYFH/MKImpulse.git
 [[MKImpulseManager defaultManager] impulseWithRepeat:10 target:self selector:@selector(testMethod)];
 ```
 
-#### 自定属性
+### 自定属性
 自定脉冲间隔, 开始时间, 脉冲间隔, 脉冲精度, 执行线程
 ```
     [[MKImpulseManager defaultManager] impulseWithQueue:IMPULSE_GLOBAL_QUEUE
@@ -70,10 +70,10 @@ $git clone https://github.com/SYFH/MKImpulse.git
                                            selector:@selector(testMethod)];
 ```
 
-### 联系
+## 联系
 - 如果程序有BUG, 请提交issue;
 - 如果有害的建议, 请写邮件到syfh@live.com;
 
-### License
----------
+## License
+----------
 All source code is licensed under the [MIT License](https://github.com/SYFH/MKImpulse/blob/master/LICENSE).
