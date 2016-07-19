@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MKImpulse'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  = 'MIT'
   s.summary  = 'MKImpulse是一个代替NSTimer的高精度脉冲器, 基于GCD编写.'
   s.homepage = 'https://github.com/SYFH/MKImpulse'
