@@ -1,6 +1,6 @@
 ### MKImpulse
 ---------
-MKImpulse是一个用来代替系统NSTimer的高精度脉冲器
+MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
 系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大. 而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
 
 #### 优点
