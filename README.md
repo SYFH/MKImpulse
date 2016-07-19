@@ -33,7 +33,7 @@ $git clone https://github.com/SYFH/MKImpulse.git
 将仓库中MKImpulse文件夹直接复制到你的项目中
 
 ### 使用
----------------------
+---------
 #### 简单使用
 回调式
 ```
@@ -73,3 +73,7 @@ $git clone https://github.com/SYFH/MKImpulse.git
 ### 联系
 - 如果程序有BUG, 请提交issue;
 - 如果有害的建议, 请写邮件到syfh@live.com;
+
+### License
+---------
+All source code is licensed under the [MIT License](https://github.com/SYFH/MKImpulse/blob/master/LICENSE).
