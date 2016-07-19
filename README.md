@@ -1,5 +1,5 @@
-## MKImpulse
-----------
+## MKImpulse 
+---------
 MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
 系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大. 而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
 
@@ -32,8 +32,8 @@ $git clone https://github.com/SYFH/MKImpulse.git
 ```
 将仓库中MKImpulse文件夹直接复制到你的项目中
 
-## 使用
-----------
+## 使用 
+---------
 ### 简单使用
 回调式
 ```
@@ -74,6 +74,6 @@ $git clone https://github.com/SYFH/MKImpulse.git
 - 如果程序有BUG, 请提交issue;
 - 如果有害的建议, 请写邮件到syfh@live.com;
 
-## License
-----------
+## License 
+---------
 All source code is licensed under the [MIT License](https://github.com/SYFH/MKImpulse/blob/master/LICENSE).
