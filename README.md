@@ -8,7 +8,8 @@
 
 
 MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
-系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大. 而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
+系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大  
+而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
 
 ### 优点
  - 高精度
@@ -17,7 +18,7 @@ MKImpulse是一个用来代替系统NSTimer的高精度脉冲器
  - 进行多任务操作
 
 ### 缺点
-因为是CPU时钟直接计算, 不宜将间隔设置的过小, 可能会造成CPU资源的大量占用而将进程卡死
+因为是CPU时钟直接计算, 不宜将间隔设置的过小, 否则可能会造成CPU资源的大量占用而将进程卡死
 
 ### 安装
 使用CocoaPods安装(1.0.0及之后的版本)
@@ -37,7 +38,6 @@ pod 'MKImpulse'
 ```
 $git clone https://github.com/SYFH/MKImpulse.git
 ```
-将仓库中MKImpulse文件夹直接复制到你的项目中
 
 ## 使用 
 
