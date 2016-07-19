@@ -1,5 +1,5 @@
 //
-//  MKImpulse.h
+//  MKImpulseManager.h
 //
 //  Created by 云翼天 on 16/7/18.
 //  Copyright © 2016年 SYFH. All rights reserved.
