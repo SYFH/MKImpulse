@@ -18,9 +18,6 @@ MKImpulse是一个用来代替系统NSTimer的高精度脉冲器
  - 自防止内存泄漏
  - 进行多任务操作
 
-### 缺点
-因为是CPU时钟直接计算, 不宜将间隔设置的过小, 否则可能会造成CPU资源的大量占用而将进程卡死
-
 ### 安装
 使用CocoaPods安装(1.0.0及之后的版本)
 ```
@@ -83,7 +80,3 @@ $git clone https://github.com/SYFH/MKImpulse.git
 - 如果程序有问题, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
 - 如果有其他的建议, 请写邮件到syfh@live.com
 - 如果有什么疑问, 可以进入[Gitter聊天室](https://gitter.im/SYFH/MKImpulse)
-
-## License 
-
-All source code is licensed under the [MIT License](https://github.com/SYFH/MKImpulse/blob/master/LICENSE).
