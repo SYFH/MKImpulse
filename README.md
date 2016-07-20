@@ -82,7 +82,7 @@ $git clone https://github.com/SYFH/MKImpulse.git
 
 - 如果程序有BUG, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
 - 如果有其他的建议, 请写邮件到syfh@live.com
-- 如果有什么疑问, 可以点击上方Gitter进入聊天室
+- 如果有什么疑问, 可以进入[Gitter聊天室](https://gitter.im/SYFH/MKImpulse)
 
 ## License 
 
