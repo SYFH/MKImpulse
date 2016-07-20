@@ -1,9 +1,9 @@
 ## MKImpulse 
 
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SYFH/MKImpulse/blob/master/LICENSE)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/v/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/p/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)&nbsp;
-[![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SYFH/MKImpulse/blob/master/LICENSE)
+[![CocoaPods](http://img.shields.io/cocoapods/v/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
+[![CocoaPods](http://img.shields.io/cocoapods/p/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
+[![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 [![Build Status](https://travis-ci.org/SYFH/MKImpulse.svg?branch=master)](https://travis-ci.org/SYFH/MKImpulse)
 [![Gitter](http://badges.gitter.im/SYFH/MKImpulse.svg)](https://gitter.im/SYFH/MKImpulse)
 
@@ -80,7 +80,7 @@ $git clone https://github.com/SYFH/MKImpulse.git
 
 ## 联系
 
-- 如果程序有BUG, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
+- 如果程序有问题, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
 - 如果有其他的建议, 请写邮件到syfh@live.com
 - 如果有什么疑问, 可以进入[Gitter聊天室](https://gitter.im/SYFH/MKImpulse)
 
