@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode7
-xcode_project: MKImpulseManagerDemo/MKImpulseManagerDemo.xcodeproj
-xcode_scheme: MKImpulseManagerDemo
+xcode_project: MKImpulseDemo/MKImpulseManagerDemo.xcodeproj
+xcode_scheme: MKImpulseDemo
 
 script:
-- xctool -project MKImpulseManagerDemo/MKImpulseManagerDemo.xcodeproj -scheme MKImpulseManagerDemo build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xctool -project MKImpulseDemo/MKImpulseManagerDemo.xcodeproj -scheme MKImpulseDemo build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
