@@ -5,6 +5,7 @@
 [![CocoaPods](http://img.shields.io/cocoapods/p/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 [![Build Status](https://travis-ci.org/SYFH/MKImpulse.svg?branch=master)](https://travis-ci.org/SYFH/MKImpulse)
+[![Gitter](http://badges.gitter.im/SYFH/MKImpulse.svg)](https://gitter.im/SYFH/MKImpulse)
 
 
 MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
@@ -79,8 +80,9 @@ $git clone https://github.com/SYFH/MKImpulse.git
 
 ## 联系
 
-- 如果程序有BUG, 请提交[issue](https://github.com/SYFH/MKImpulse/issues);
-- 如果有其他的建议, 请写邮件到syfh@live.com;
+- 如果程序有BUG, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
+- 如果有其他的建议, 请写邮件到syfh@live.com
+- 如果有什么疑问, 可以点击上方Gitter进入聊天室
 
 ## License 
 
