@@ -1,6 +1,6 @@
 ## MKImpulse 
 
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SYFH/MKImpulse/blob/master/LICENSE)
+[![License MIT](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://github.com/SYFH/MKImpulse/blob/master/LICENSE)
 [![CocoaPods](http://img.shields.io/cocoapods/v/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
 [![CocoaPods](http://img.shields.io/cocoapods/p/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
 [![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
