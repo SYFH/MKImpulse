@@ -8,8 +8,11 @@
 [![Gitter](http://badges.gitter.im/SYFH/MKImpulse.svg)](https://gitter.im/SYFH/MKImpulse)
 
 
-MKImpulse是一个用来代替系统NSTimer的高精度脉冲器  
-系统的NSTimer是添加到Runloop中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大  
+`MKImpulse` is a high precision pulse used instead of system `NSTimer`.  
+System of `NSTimer` is added to the `Runloop`, cause deviation when system is busy, the longer the time, the greater the deviation.   
+And `MKImpulse` is based on the `GCD`, calculated by the CPU, error is negligible.   
+`MKImpulse`是一个用来代替系统`NSTimer`的高精度脉冲器  
+系统的`NSTimer`是添加到`Runloop`中的, 在系统繁忙时会造成偏差, 时间越长, 偏差越大  
 而MKImpulse是基于GCD编写的脉冲器, 精度由CPU时钟进行计算, 误差基本可以忽略不计
 
 ### 优点
