@@ -58,13 +58,13 @@ $git clone https://github.com/SYFH/MKImpulse.git
 自定脉冲间隔, 开始时间, 脉冲间隔, 脉冲精度, 执行线程
 ```
 [[MKImpulseManager defaultManager] impulseWithQueue:IMPULSE_GLOBAL_QUEUE
-                                                 repeat:5
-                                                  start:1
-                                               interval:2
-                                               accuracy:0
-                                                 action:^{
-                                                     NSLog(@"你要执行的任务");
-                                                 }];
+                                             repeat:5
+                                              start:1
+                                           interval:2
+                                           accuracy:0
+                                             action:^{
+                                                 NSLog(@"你要执行的任务");
+                                             }];
 
 [[MKImpulseManager defaultManager] impulseWithQueue:IMPULSE_GLOBAL_QUEUE
                                              repeat:IMPULSE_UNLIMITED
