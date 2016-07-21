@@ -78,5 +78,6 @@ $git clone https://github.com/SYFH/MKImpulse.git
 ## 联系
 
 - 如果程序有问题, 请提交[issue](https://github.com/SYFH/MKImpulse/issues)
-- 如果有其他的建议, 请写邮件到syfh@live.com
-- 如果有什么疑问, 可以进入[Gitter聊天室](https://gitter.im/SYFH/MKImpulse)
+- 如果有其他好的建议, 请写邮件到syfh@live.com
+- 如果有什么疑问, 可以进入[Gitter聊天室](https://gitter.im/SYFH/MKImpulse)和作者直接进行问答
+- 如果你感觉写的还不错, 请点击Star!
