@@ -152,6 +152,12 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
 - (void)suspendImpulseAll;
 
 /*!
+ @brief 暂停脉冲器, 与 -suspendXXXX 效果同等
+ */
+- (void)pauseImpulse;
+- (void)pauseImpulseAll;
+
+/*!
  @brief 继续脉冲器
  */
 - (void)resumeImpulse;
@@ -162,6 +168,12 @@ typedef NS_ENUM(NSInteger, MKImpulseExecType) {
  */
 - (void)cancelImpulse;
 - (void)cancelImpulseAll;
+
+/*!
+ @brief 停止脉冲器, 与取消脉冲器同等
+ */
+- (void)stopImpulse;
+- (void)stopImpulseAll;
 
 @end
 
