@@ -144,6 +144,14 @@
     }];
 }
 
+- (void)pauseImpulse {
+    [self suspendImpulse];
+}
+
+- (void)pauseImpulseAll {
+    [self suspendImpulseAll];
+}
+
 - (void)resumeImpulse {
     dispatch_resume(self.impulse);
 }
@@ -168,6 +176,14 @@
         dispatch_source_cancel(impulse.impulse_t);
     }];
     [self.impulseGroup removeAllObjects];
+}
+
+- (void)stopImpulse {
+    [self cancelImpulse];
+}
+
+- (void)stopImpulseAll {
+    [self cancelImpulseAll];
 }
 
 // 从脉冲器组里删除某一个脉冲器
