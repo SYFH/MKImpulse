@@ -1,5 +1,7 @@
 ## MKImpulse 
 
+[![Join the chat at https://gitter.im/SYFH/MKImpulse](https://badges.gitter.im/SYFH/MKImpulse.svg)](https://gitter.im/SYFH/MKImpulse?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![License MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/SYFH/MKImpulse/blob/master/LICENSE)
 [![CocoaPods](http://img.shields.io/cocoapods/v/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
 [![CocoaPods](http://img.shields.io/cocoapods/p/MKImpulse.svg?style=flat)](https://cocoapods.org/?q=MKImpulse)
